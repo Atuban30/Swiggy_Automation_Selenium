@@ -21,7 +21,7 @@ public class Swiggy {
             login.click();
             
             WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='mobile']")));
-            input.sendKeys("6291736165");
+            input.sendKeys("your-phn-number");
             
             WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='overlay-sidebar-root']/div/div/div[2]/div/div/div/form/div[2]/a")));
             submitButton.click();
@@ -76,7 +76,7 @@ public class Swiggy {
 
             //Adding UPI ID
             WebElement upi_id = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/div[2]/div/div[1]/div/input")));
-            upi_id.sendKeys("atrayeeban02@okaxis");
+            upi_id.sendKeys("yourUPIid");
 
             WebElement proceed = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[1]/div/div/div/div/div/div[2]/div/button")));
             clickWithRetry(driver, wait, proceed);
